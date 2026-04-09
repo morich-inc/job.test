@@ -9,224 +9,205 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Noto Sans JP', sans-serif; color: #333; }
+        body { font-family: 'Noto Sans JP', sans-serif; color: #333; background-color: #fff; }
         .morich-red { color: #E60012; }
         .bg-morich-red { background-color: #E60012; }
         .border-morich-red { border-color: #E60012; }
+        .point-box { border: 2px solid #E60012; border-radius: 8px; position: relative; }
+        .point-tag { 
+            position: absolute; top: -14px; left: 20px; 
+            background: #E60012; color: #fff; padding: 2px 12px; 
+            font-weight: bold; font-size: 0.875rem; border-radius: 4px;
+        }
     </style>
 </head>
-<body class="bg-gray-50 antialiased">
+<body class="bg-gray-50">
 
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <header class="bg-white border-b sticky top-0 z-50">
         <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
             <img src="morich_logo.jpg" alt="morich" class="h-8">
-            <span class="text-sm font-bold text-gray-500">JOB ID: 17074</span>
+            <span class="text-sm font-bold text-gray-500 tracking-widest">JOB ID: 17074</span>
         </div>
     </header>
 
-    <main class="max-w-5xl mx-auto px-4 py-8">
-        <section class="mb-12">
-            <h1 class="text-4xl md:text-6xl font-black mb-4 tracking-tighter">
+    <main class="max-w-5xl mx-auto px-4 py-8 lg:py-12 bg-white shadow-sm mt-4 mb-12 rounded-lg">
+        
+        <section class="mb-10 text-center lg:text-left">
+            <h1 class="text-4xl lg:text-6xl font-black mb-4 leading-tight">
                 ドクターズ株式会社
             </h1>
-            <div class="flex flex-wrap gap-4 text-sm text-gray-600">
-                <span class="bg-gray-200 px-3 py-1 rounded-full">東京都港区</span>
-                <span class="bg-gray-200 px-3 py-1 rounded-full">設立: 2016年9月</span>
-                <span class="bg-gray-200 px-3 py-1 rounded-full">従業員数: 45名</span>
-                <span class="bg-gray-200 px-3 py-1 rounded-full font-bold morich-red">IPO準備中</span>
+            <p class="text-xl lg:text-2xl font-bold text-gray-600">経営戦略 マネージャーおよびシニアマネージャー候補（事業開発/M&A・IPO）</p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 border-y py-8 border-gray-100">
+            <div class="space-y-2">
+                <p><span class="inline-block w-24 font-bold text-gray-500">本社所在地</span>東京都港区芝公園2-3-6 PMO浜松町Ⅱ 5階</p>
+                <p><span class="inline-block w-24 font-bold text-gray-500">設立</span>2016年9月26日</p>
+            </div>
+            <div class="space-y-2">
+                <p><span class="inline-block w-24 font-bold text-gray-500">従業員数</span>45名</p>
+                <p><span class="inline-block w-24 font-bold text-gray-500">上場区分</span>IPO準備中（シリーズB調達済）</p>
             </div>
         </section>
 
         <section class="mb-12">
-            <div class="border-2 border-morich-red bg-red-50 rounded-xl p-6 md:p-8">
-                <h2 class="text-xl font-bold morich-red mb-4 flex items-center">
-                    <span class="mr-2">★</span> morich オススメPoint
-                </h2>
-                <ul class="space-y-4 text-gray-800 leading-relaxed">
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <span class="w-1 h-8 bg-morich-red mr-4"></span>医療の未来を、現役医師と共に創り上げる
+            </h2>
+            <div class="prose max-w-none text-gray-700 leading-relaxed space-y-6">
+                <p>
+                    ドクターズ株式会社は、約40万人の医療従事者と700名超のエキスパート医師ネットワークを基盤に、医療DXの社会実装を推進するプラットフォーム企業です。単なるITベンダーではなく、代表の柳川氏（脳神経外科医）を筆頭に、医療現場のリアルな知見とデジタル技術を融合させ、日本の医療構造を本質的に変革することを目指しています。
+                </p>
+                <p>
+                    現在、同社は日本発の医療DXインフラとして、米国市場（ニューヨーク）へのアクセスも視野に入れたグローバル展開の最終段階にあります。東洋経済「すごいベンチャー」トップ50にも選出され、企業評価額は約400億円と、国内トップクラスのヘルスケアベンチャーとして確固たる地位を築いています。
+                </p>
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gray-300 italic">
+                    「医療の未来を共に創る仲間を求めています。デジタルの力を活用し、どこにいても安心して健康に生きられる社会を一緒に実現しましょう」<br>
+                    <span class="text-sm font-bold not-italic block mt-2 text-right">— 代表取締役 兼 CEO 柳川 貴雄</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <div class="point-box p-6 lg:p-8">
+                <span class="point-tag">morichオススメPoint</span>
+                <ul class="space-y-4">
                     <li class="flex items-start">
-                        <span class="morich-red mr-2">●</span>
-                        <div><strong>日本発・世界基準の医療DXインフラを創る：</strong> 企業価値約400億円、東洋経済「すごいベンチャー100」選出。米国市場（ニューヨーク）上場を視野に入れた最終段階のフェーズです。</div>
+                        <span class="morich-red font-bold mr-3 text-xl">★</span>
+                        <p class="font-bold text-lg text-gray-800">IPO準備の最終フェーズ：米国市場（NY）を見据えた壮大なスケールの挑戦に参画可能。</p>
                     </li>
                     <li class="flex items-start">
-                        <span class="morich-red mr-2">●</span>
-                        <div><strong>圧倒的な「現場感」と「実行力」：</strong> 代表の柳川氏は現役の脳外科医。約700名のエキスパート医師ネットワークと直営33施設の医療現場を持ち、理論だけでない「動くソリューション」を社会実装しています。</div>
+                        <span class="morich-red font-bold mr-3 text-xl">★</span>
+                        <p class="font-bold text-lg text-gray-800">圧倒的な独自性：33の医療施設を直営し、現場での「検証・改善」を高速回転させるHealthcare OSを構築。</p>
                     </li>
                     <li class="flex items-start">
-                        <span class="morich-red mr-2">●</span>
-                        <div><strong>未踏の領域を切り拓く裁量：</strong> M&A・IPO・グローバル展開が加速する中、経営陣の右腕として意思決定に深く関与。医療構造を本質から変革する挑戦に、ダイレクトに携われます。</div>
+                        <span class="morich-red font-bold mr-3 text-xl">★</span>
+                        <p class="font-bold text-lg text-gray-800">強力なパートナーシップ：スズケン、みずほFG、キヤノンITS等、業界大手との資本業務提携により強固な基盤を確立。</p>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="morich-red font-bold mr-3 text-xl">★</span>
+                        <p class="font-bold text-lg text-gray-800">morichからの入社実績：過去複数名の決定実績があり、選考通過の勘所をお伝え可能です。</p>
                     </li>
                 </ul>
             </div>
         </section>
 
         <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-6 border-l-4 border-morich-red pl-4">企業紹介</h2>
-            <div class="bg-white rounded-xl p-8 shadow-sm leading-loose text-gray-700">
-                <p class="mb-6">
-                    ドクターズ株式会社は、医療従事者約40万人、医療機関約7.5万施設という巨大なネットワークを基盤に、医療DXの社会実装を推進するプラットフォーム企業です。単なるIT企業ではなく、医師の知見と企業の技術をつなぐ「橋渡し」として、日本の医療構造を根本から変革することを目指しています。
-                </p>
-                <p class="mb-6">
-                    現在、国内にとどまらず米国市場への進出も進んでおり、グローバル規模での「Healthcare OS」の構築が加速しています。スズケン、みずほFG、キヤノンITSといった業界大手との資本業務提携も次々と実現。社会貢献性とビジネスとしての成長性を、これほど高い次元で両立している企業は他にありません。
-                </p>
-                <div class="bg-gray-50 p-6 rounded-lg italic text-gray-600">
-                    「デジタルの力で、どこにいても安心して健康に生きられる社会を実現したい。この改革には、民間企業の卓越した技術と医療現場の知見の融合が不可欠です。医療の未来を共に創る仲間を待っています。」（CEO 柳川 貴雄）
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-6 border-l-4 border-morich-red pl-4">募集要項</h2>
-            <div class="overflow-hidden border border-gray-200 rounded-xl shadow-sm">
-                <table class="w-full text-left border-collapse bg-white">
-                    <tbody>
+            <h2 class="text-2xl font-bold mb-6 flex items-center">
+                <span class="w-1 h-8 bg-morich-red mr-4"></span>募集要項
+            </h2>
+            <div class="overflow-hidden border border-gray-200 rounded-lg">
+                <table class="w-full text-left border-collapse">
+                    <tbody class="divide-y divide-gray-200">
                         <tr>
-                            <th class="w-1/4 py-4 px-6 bg-gray-50 border-b font-bold text-gray-700">ポジション</th>
-                            <td class="py-4 px-6 border-b">経営戦略 マネージャーおよびシニアマネージャー候補（事業開発/M&A・IPO）</td>
+                            <th class="w-1/4 py-4 px-6 bg-gray-50 font-bold text-gray-700">雇用形態</th>
+                            <td class="py-4 px-6">正社員</td>
                         </tr>
                         <tr>
-                            <th class="py-4 px-6 bg-gray-50 border-b font-bold text-gray-700">雇用形態</th>
-                            <td class="py-4 px-6 border-b">正社員</td>
-                        </tr>
-                        <tr>
-                            <th class="py-4 px-6 bg-gray-50 border-b font-bold text-gray-700">業務内容</th>
-                            <td class="py-4 px-6 border-b leading-relaxed">
-                                経営戦略の立案および実施、中長期計画の策定・進捗管理、予算編成・KPI設定。
-                                加えて、M&A戦略の策定、案件ソーシング、デューデリジェンス、PMI対応、子会社管理など、経営の根幹に関わる全般を担っていただきます。
+                            <th class="py-4 px-6 bg-gray-50 font-bold text-gray-700">業務内容</th>
+                            <td class="py-4 px-6 leading-relaxed">
+                                <strong>【ミッション】</strong><br>
+                                経営戦略の立案および実施、中長期計画の策定・進捗管理を担います。<br><br>
+                                <strong>【詳細】</strong><br>
+                                ・予算編成、KPI設定、モニタリング<br>
+                                ・M&A戦略策定、案件ソーシング、DD、PMI対応<br>
+                                ・医療機関・関連企業の買収・資本提携のリサーチ・初期検討<br>
+                                ・買収後の子会社管理、業績モニタリングのサポート、経営支援<br>
+                                <strong>（変更の範囲）</strong>：会社の定める業務
                             </td>
                         </tr>
                         <tr>
-                            <th class="py-4 px-6 bg-gray-50 border-b font-bold text-gray-700">契約期間</th>
-                            <td class="py-4 px-6 border-b">期間の定めなし</td>
+                            <th class="py-4 px-6 bg-gray-50 font-bold text-gray-700">契約期間 / 試用期間</th>
+                            <td class="py-4 px-6">期間の定めなし / 試用期間あり（詳細はお問い合わせください）</td>
                         </tr>
                         <tr>
-                            <th class="py-4 px-6 bg-gray-50 border-b font-bold text-gray-700">試用期間</th>
-                            <td class="py-4 px-6 border-b">あり（詳細はお問い合わせください）</td>
-                        </tr>
-                        <tr>
-                            <th class="py-4 px-6 bg-gray-50 border-b font-bold text-gray-700">就業場所</th>
-                            <td class="py-4 px-6 border-b">
-                                【本社】東京都港区芝公園2-3-6 PMO浜松町Ⅱ 5階<br>
-                                <span class="text-sm text-gray-500">※大門駅 徒歩2分 / 浜松町駅 徒歩6分 / リモート相談可</span>
+                            <th class="py-4 px-6 bg-gray-50 font-bold text-gray-700">就業場所</th>
+                            <td class="py-4 px-6 leading-relaxed">
+                                東京都港区芝公園2-3-6 PMO浜松町Ⅱ 5階<br>
+                                ※リモートワークは要相談<br>
+                                <strong>（変更の範囲）</strong>：会社の定める営業所、会社の定める場所（テレワークを行う場所を含む）
                             </td>
                         </tr>
                         <tr>
-                            <th class="py-4 px-6 bg-gray-50 border-b font-bold text-gray-700">就業時間</th>
-                            <td class="py-4 px-6 border-b">9:00～18:00（所定労働時間：8時間、休憩60分）</td>
-                        </tr>
-                        <tr>
-                            <th class="py-4 px-6 bg-gray-50 border-b font-bold text-gray-700">休日</th>
-                            <td class="py-4 px-6 border-b">完全週休2日制（土日祝）、年間休日125日、有給休暇10日〜</td>
-                        </tr>
-                        <tr>
-                            <th class="py-4 px-6 bg-gray-50 border-b font-bold text-gray-700">賃金</th>
-                            <td class="py-4 px-6 border-b">
-                                <div class="font-bold text-lg mb-1">想定年収：900万円～1,000万円</div>
-                                <div class="text-sm text-gray-700 space-y-1">
-                                    年俸制（12分割で支給）<br>
-                                    月額：750,000円〜833,333円<br>
-                                    ・基本給：554,913円〜616,570円<br>
-                                    ・固定残業代：195,087円〜216,764円（45時間／月分。超過分は別途支給）
-                                </div>
+                            <th class="py-4 px-6 bg-gray-50 font-bold text-gray-700">就業時間・休憩・休日</th>
+                            <td class="py-4 px-6">
+                                9:00～18:00（所定労働時間：8時間0分）<br>
+                                休憩：60分<br>
+                                休日：完全週休2日制（土日祝）、年間休日125日、有給休暇10日（入社半年後付与）
                             </td>
                         </tr>
                         <tr>
-                            <th class="py-4 px-6 bg-gray-50 border-b font-bold text-gray-700">昇給・賞与</th>
-                            <td class="py-4 px-6 border-b">昇給：年2回（4月・10月）※業績・評価による</td>
+                            <th class="py-4 px-6 bg-gray-50 font-bold text-gray-700">賃金</th>
+                            <td class="py-4 px-6">
+                                <strong>想定年収：900万円～1,000万円</strong>（年俸制、12分割支給）<br>
+                                ・月額：750,000円〜833,333円<br>
+                                ・基本給：554,913円〜616,570円<br>
+                                ・固定残業代：195,087円〜216,764円<br>
+                                ※固定残業時間45時間/月を含む。超過分は別途支給。
+                            </td>
                         </tr>
                         <tr>
-                            <th class="py-4 px-6 bg-gray-50 border-b font-bold text-gray-700">社会保険</th>
-                            <td class="py-4 px-6 border-b">健康保険、厚生年金、雇用保険、労災保険（完備）</td>
+                            <th class="py-4 px-6 bg-gray-50 font-bold text-gray-700">昇給・賞与</th>
+                            <td class="py-4 px-6">昇給：年2回（4月・10月）※業績、個人評価による</td>
                         </tr>
                         <tr>
-                            <th class="py-4 px-6 bg-gray-50 border-b font-bold text-gray-700">受動喫煙防止措置</th>
-                            <td class="py-4 px-6 border-b">屋内禁煙</td>
+                            <th class="py-4 px-6 bg-gray-50 font-bold text-gray-700">社会保険</th>
+                            <td class="py-4 px-6">健康保険、厚生年金、雇用保険、労災保険 完備</td>
+                        </tr>
+                        <tr>
+                            <th class="py-4 px-6 bg-gray-50 font-bold text-gray-700">受動喫煙防止措置</th>
+                            <td class="py-4 px-6">屋内禁煙（詳細はお問い合わせください）</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-gray-800">
-                <h3 class="text-xl font-bold mb-4">必須スキル</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
-                    <li>経営企画、事業企画、戦略立案の経験（3年以上）</li>
-                    <li>財務・会計知識（PL/BS/CFの理解）</li>
-                    <li>市場調査・競合分析に基づく戦略提案経験</li>
-                    <li>グループ子会社の管理・ガバナンス経験</li>
-                </ul>
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-bold mb-3 morich-red">応募資格</h3>
+                    <div class="text-gray-700 text-sm space-y-2 bg-gray-50 p-4 rounded">
+                        <p><strong>【必須】</strong><br>
+                        ・事業会社/コンサルでの経営企画・戦略立案経験（3年以上）<br>
+                        ・財務知識（PL/BS/CFの理解）<br>
+                        ・ステークホルダーを巻き込むプロジェクト推進力<br>
+                        ・グループ子会社の管理経験</p>
+                        <p><strong>【歓迎】</strong><br>
+                        ・M&A実務（戦略〜PMI）経験<br>
+                        ・新規事業立ち上げ、医療業界経験、ビジネス英語</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-3 morich-red">選考フロー</h3>
+                    <div class="text-gray-700 text-sm bg-gray-50 p-4 rounded">
+                        1. 書類選考<br>
+                        2. 一次面接<br>
+                        3. 二次面談（COO 白石氏）<br>
+                        4. 最終面接（CEO 柳川氏）
+                    </div>
+                </div>
             </div>
-            <div class="bg-white p-8 rounded-xl shadow-sm border-t-4 border-morich-red">
-                <h3 class="text-xl font-bold mb-4">歓迎スキル</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
-                    <li>M&A案件の実行経験（戦略策定～PMI）</li>
-                    <li>医療・ヘルスケア業界での実務経験</li>
-                    <li>新規事業立ち上げ経験</li>
-                    <li>英語によるビジネスコミュニケーション</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-6 border-l-4 border-morich-red pl-4">エージェントコメント</h2>
-            <div class="bg-gray-800 text-white p-8 rounded-xl relative overflow-hidden">
-                <div class="relative z-10">
-                    <p class="leading-loose">
-                        ドクターズ社は、医療従事者のネットワークという「最強のアセット」を、テックの力でマネタイズし、社会実装に繋げる希有な企業です。代表の柳川氏は非常にパワフルかつ論理的で、現場のリアリティを誰よりも大切にされています。今回のポジションは、その柳川氏の「右腕」として、IPOに向けた最終調整やM&Aを通じたさらなる拡大を担う、非常にエキサイティングな役割です。
-                        <br><br>
-                        <strong>【通過ポイント】</strong> 数値に基づいたロジカルな思考はもちろんですが、それ以上に「医療を良くしたい」という想いと、カオスな環境を楽しみながらスピード感を持って実行に移せる「当事者意識」が強く求められます。
+            <div>
+                <h3 class="text-lg font-bold mb-3 morich-red">morichコメント</h3>
+                <div class="text-gray-700 text-sm leading-relaxed bg-red-50 p-6 rounded-lg border border-red-100">
+                    <p class="mb-4">
+                        代表の柳川様は、2,500件超の執刀経験を持つ脳神経外科医でありながら、ビジネスの最前線で「使われるデジタルヘルス」を追求されています。この「ウェットな現場感」と「ドライな戦略思考」の融合こそがドクターズの強みです。
+                    </p>
+                    <p>
+                        今回のポジションは、まさに経営の中枢。将来のIPO、そしてグローバル展開を見据えた非常にエキサイティングなフェーズです。裁量を持って自ら動ける方には、これ以上ないフィールドが用意されています。
                     </p>
                 </div>
-                <div class="absolute right-[-20px] bottom-[-20px] opacity-10">
-                    <img src="morich_logo.jpg" alt="" class="w-64 grayscale invert">
-                </div>
             </div>
         </section>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-6 border-l-4 border-morich-red pl-4">選考フロー</h2>
-            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4">
-                <div class="bg-white p-4 rounded-lg shadow-sm border flex-1 text-center w-full">
-                    <span class="text-xs text-gray-500 font-bold block mb-1">STEP 01</span>
-                    <p class="font-bold">書類選考</p>
-                </div>
-                <div class="hidden md:block text-gray-400">▶</div>
-                <div class="bg-white p-4 rounded-lg shadow-sm border flex-1 text-center w-full">
-                    <span class="text-xs text-gray-500 font-bold block mb-1">STEP 02</span>
-                    <p class="font-bold">一次面接</p>
-                </div>
-                <div class="hidden md:block text-gray-400">▶</div>
-                <div class="bg-white p-4 rounded-lg shadow-sm border flex-1 text-center w-full">
-                    <span class="text-xs text-gray-500 font-bold block mb-1">STEP 03</span>
-                    <p class="font-bold">二次面談 (COO)</p>
-                </div>
-                <div class="hidden md:block text-gray-400">▶</div>
-                <div class="bg-white p-4 rounded-lg shadow-sm border flex-1 text-center w-full">
-                    <span class="text-xs text-gray-500 font-bold block mb-1">STEP 04</span>
-                    <p class="font-bold">最終面接 (CEO)</p>
-                </div>
+        <footer class="mt-12 border-t pt-8">
+            <h3 class="font-bold text-gray-500 mb-4">RELATED LINKS</h3>
+            <div class="flex flex-wrap gap-4 text-sm">
+                <a href="https://doctors-inc.jp/" class="text-blue-600 hover:underline" target="_blank">コーポレートサイト</a>
             </div>
-        </section>
-
-        <section class="mb-12">
-            <h2 class="text-2xl font-bold mb-6 border-l-4 border-morich-red pl-4">外部リンク</h2>
-            <div class="bg-white rounded-xl p-6 shadow-sm flex flex-wrap gap-4">
-                <a href="https://doctors-inc.jp/" target="_blank" class="text-blue-600 hover:underline flex items-center">
-                    公式サイト：https://doctors-inc.jp/ ↗
-                </a>
-                <a href="https://agent.herp.cloud/p/lp6dWUJgiVl5FLgL-KjopxgJ3rbdrwBKWUsnadovjZk/requisitions/id/ba4c6ab6-b7aa-45b9-b3ba-6a40fc199239" target="_blank" class="text-blue-600 hover:underline flex items-center">
-                    詳細求人票(ATS) ↗
-                </a>
-            </div>
-        </section>
+        </footer>
     </main>
-
-    <footer class="bg-white border-t border-gray-200 py-12">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <img src="morich_logo.jpg" alt="morich" class="h-6 mx-auto mb-4 opacity-50">
-            <p class="text-sm text-gray-400">&copy; 2026 morich Inc. All Rights Reserved.</p>
-        </div>
-    </footer>
 
 </body>
 </html>
